@@ -1,6 +1,6 @@
-# Inquiro
+# QueryZone
 
-Inquiro is a basic quora clone website build with React and Firebase. It is a platform where users can ask questions and get answers from other users.
+QueryZone is a basic quora clone website build with React and Firebase. It is a platform where users can ask questions and get answers from other users.
 
 ## Features
 
