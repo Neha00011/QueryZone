@@ -66,11 +66,11 @@ const Signup = () => {
             <div style={{ backgroundImage: `url(${welcome})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}
                 className="flex items-center justify-center">
                 <div className="bg-white h-11/12 w-7/12 rounded-sm p-8">
-                    <h1 className="text-red-700 text-6xl font-bold font-serif text-center">Quora</h1>
+                    <h1 className="text-red-700 text-6xl font-bold font-serif text-center">QueryZone</h1>
                     <h1 className="text-center font-bold text-gray-500 mt-3">A place to share knowledge and better understand the world</h1>
                     <div className="flex mt-10">
                         <div>
-                            <h1 className="text-zinc-400 text-sm w-72">By continuing you indicate that you agree to Quora’s
+                            <h1 className="text-zinc-400 text-sm w-72">By continuing you indicate that you agree to QueryZone's
                                 <span className="text-cyan-700">Terms of Service</span> and <span className="text-cyan-700">Privacy Policy.</span></h1>
                             <div onClick={googleSignin} className="cursor-pointer flex p-3 border border-spacing-1 items-center w-80 rounded-sm mt-5">
                                 <img src={google} className="w-5 h-5 ml-2" />
@@ -96,7 +96,7 @@ const Signup = () => {
                         </div>
                     </div>
                     <hr className="mt-3" />
-                    <h1 className="text-sm text-center mt-3 text-zinc-600">About . Careers . Privacy . Terms . Contact . Languages . Your . Ad . Choices . Press© Quora, Inc. 2024</h1>
+                    <h1 className="text-sm text-center mt-3 text-zinc-600">About . Careers . Privacy . Terms . Contact . Languages . Your . Ad . Choices . Press© QueryZone, Inc. 2024</h1>
                 </div>
                 {emailSignup ? <EmailSignup setEmailSignup={setEmailSignup} /> : ""}
             </div>
