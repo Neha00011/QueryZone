@@ -4,7 +4,7 @@ import group from "../assets/group.png"
 import clipboard from "../assets/clipboard.png"
 import edit from "../assets/edit.png"
 import home from "../assets/home.png"
-import Inquiro from "../assets/Inquiro.png"
+import QueryZone from "../assets/QueryZone.png"
 import lens from "../assets/lens.png"
 import Avatar from "react-avatar"
 import { auth } from "../firebase/setup"
@@ -25,8 +25,8 @@ const Navbar = (props: searchProp) => {
   return (
     <div className="flex pl-20 pt-3 shadow-md h-14 w-screen">
       <div className="flex">
-        <img src={Inquiro} className="w-24 cursor-pointer" />
-        <h1 className="text-lg font-bold mt-1">Inquiro</h1>
+        <img src={QueryZone} className="w-12 mx-2 cursor-pointer" />
+        <h1 className="text-lg font-bold mt-1">QueryZone</h1>
       </div>
 
       <img src={home} className="w-7 h-7 ml-10 cursor-pointer" />
@@ -36,9 +36,9 @@ const Navbar = (props: searchProp) => {
       <img src={bell} className="w-7 h-7 ml-10 cursor-pointer" />
       <div className="flex border border-spacing-1 h-9 ml-10 w-72 p-1 cursor-pointer">
         <img src={lens} className="w-3 h-3 mt-2 ml-3" />
-        <input onChange={(e) => props?.setSearch(e.target.value)} placeholder="Search Inquiro" className="ml-2 outline-none" />
+        <input onChange={(e) => props?.setSearch(e.target.value)} placeholder="Search QueryZone" className="ml-2 outline-none" />
       </div>
-      <h1 className="text-sm border border-spacing-1 rounded-full p-2 ml-5 h-9">Try Inquiro+</h1>
+      <h1 className="text-sm border border-spacing-1 rounded-full p-2 ml-5 h-9">Try QueryZone+</h1>
       <img src={globe} className="w-5 h-5 ml-5 mt-2 cursor-pointer" />
       {auth?.currentUser?.emailVerified ? <Avatar round size="25" className="mt-0.5 ml-2 cursor-pointer" name={auth?.currentUser?.email ?? account} />
         : <Avatar round size="25" className="mt-0.5 ml-2 cursor-pointer" src={account} />}
